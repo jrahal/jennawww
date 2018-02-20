@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <title>Components Documentation - Material Kit by Creative Tim</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/material-kit.css" rel="stylesheet" />
+  <link href="assets/css/demo.css" rel="stylesheet" />
+
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+  <style>
+    pre.prettyprint {
+      background-color: #eee;
+      border: 0px;
+      margin-bottom: 60px;
+      margin-top: 30px;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .atv,
+    .str {
+      color: #05AE0E;
+    }
+
+    .tag,
+    .pln,
+    .kwd {
+      color: #3472F7;
+    }
+
+    .atn {
+      color: #2C93FF;
+    }
+
+    .pln {
+      color: #333;
+    }
+
+    .com {
+      color: #999;
+    }
+
+    .space-top {
+      margin-top: 50px;
+    }
+
+    .btn-primary .caret {
+      border-top-color: #3472F7;
+      color: #3472F7;
+    }
+
+    .area-line {
+      border: 1px solid #999;
+      border-left: 0;
+      border-right: 0;
+      color: #666;
+      display: block;
+      margin-top: 20px;
+      padding: 8px 0;
+      text-align: center;
+    }
+
+    .area-line a {
+      color: #666;
+    }
+
+    .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+
+    .table-shopping .td-name {
+      min-width: 130px;
+    }
+
+  </style>
+
+
+</head>
+
+<body class="components-page">
+
+  <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button id="menu-toggle" type="button" class="navbar-toggle" data-target="#navigation-doc">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar bar1"></span>
+          <span class="icon-bar bar2"></span>
+          <span class="icon-bar bar3"></span>
+        </button>
+        <a href="http://jenna.rahal.io">
+          <div class="logo-container">
+            <div class="logo">
+              <img src="assets/img/logo.png" alt="Creative Jenna">
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navigation-doc">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="index.html">Main Page</a>
+          </li>
+          <li>
+            <a href="references.html">References</a>
+          </li>
+          <li>
+            <a href="signup.html">Sign Up</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <div class="wrapper">
+    <div class="header header-filter" style="background-image: url('https://images.unsplash.com/photo-1423655156442-ccc11daa4e99?crop=entropy&dpr=2&fit=crop&fm=jpg&h=750&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1450');">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h1 class="title text-center">Research Report</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main main-raised">
+      <div class="section">
+        <div class="container">
+          <div class="row">
+
+            <!-- begin index -->
+            <div class="col-md-2">
+              <div class="fixed-section" data-spy="affix" data-offset-top="340">
+                <ul>
+                  <li>
+                    <a href="#background">Background</a>
+                  </li>
+                  <li>
+                    <a href="#statistics">Statistics</a>
+                  </li>
+                  <li>
+                    <a href="#impact">Impact</a>
+                  </li>
+                  <li>
+                    <a href="#perspective">Perspective</a>
+                  </li>
+                  <li>
+                    <a href="#civics">Civics</a>
+                  </li>
+                  <li>
+                    <a href="#laws">Laws</a>
+                  </li>
+                  <li>
+                    <a href="#politics">Politics</a>
+                  </li>
+                  <li>
+                    <a href="#attempts">Attempts</a>
+                  </li>
+                  <li>
+                    <a href="#solutions">Solutions</a>
+                  </li>
+                  <li>
+                    <a href="#pros-cons">Pros and Cons</a>
+                  </li>
+                  <li>
+                    <a href="#conclusion">Conclusion</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- end index -->
+
+            <!-- main content -->
+            <div class="col-md-8 col-md-offset-1">
+              <div class="tim-container">
+
+                <div class="tim-row" id="background">
+                  <h2>Background</h2>
+                  <h4></h4>
+                  <p>
+                    Legalizing and regulating marijuana for recreational purposes presents a bold new landscape for Canadian businesses and governments
+                    alike. What this new landscape might look like remains unclear, however, the Federal Task Force charged
+                    with informing upcoming legislation on the topic continues to study the issue and meet with stakeholders
+                    throughout Canada and abroad, including in those US states where recreational marijuana is already legal.
+                    (4)
+                  </p>
+                  <p>
+                    But why is it illegal in most places and why did it take Canada so long to legalize it? First, it was perceived as highly
+                    addictive and historically been linked with Narcotics such as Cocaine and Heroin. Adiitionally, it was
+                    associated with bad lifestyles and with oppressed ethnic groups. Marijuana was associated with Mexican-Americans,
+                    and a ban on marijuana was seen as a way of discouraging Mexican-American subcultures from developing.
+                    (1)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+                <div class="tim-row" id="statistics">
+                  <h2>Statistics</h2>
+                  <br>
+                  <p>
+                    Of adults 26 or older who used marijuana before age 15, 62% went on to use cocaine at some point in their lives; 9% went
+                    on to use heroin at least once; and 54% made some nonmedical use of mind-altering prescription drugs.
+                  </p>
+                  <p>
+                    The annual cost of enforcing marijuana laws (police and courts): $500 million. Also annual number of arrests for all offences
+                    concerning illegal drugs: 90,000
+                  </p>
+                  <p>
+                    It is also estimated annual costs associated with substance abuse in Canada: $1.4 billion for illegal drugs; $7.5 billion
+                    for alcohol and $9.6 billion for tobacco. Finally, the estimated number of marijuana users in Canada:
+                     2.3 million (4)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="impact">
+                  <h2>Who is impacted by this topic? </h2>
+                  <br>
+                  <h3>The Government</h3>
+                  <p>
+                    The government has to spend less money enforcing laws against marijuana. They also need to spend more money on marijuana
+                    sales, and hiring marijuana farmers.
+                  </p>
+                  <br>
+                  <h3>Blackmarket dealers</h3>
+                  <p>
+                    Blackmarket dealers will be one of the most affected by this topic. They will sell way less Marijuana due to the legal accessibility
+                    of the substance. Marijuana users will feel more comfortable purchasing it legally. Most illegal dealers
+                    will go out of business.
+                  </p>
+                  <br>
+                  <h3>Current Farmers</h3>
+                  <p>
+                    Current Marijuana farmers will be able to grow their business exponentially, as they are no longer selling small amounts
+                    to underground black market dealers, but in a mass to government officials.
+                  </p>
+                  <br>
+                  <h3>Retailers</h3>
+                  <p>
+                    Retailers such as Shoppers Drug Mart, Loblaws and the LCBO will want to start incorporating Marijuana in their sales. In
+                    doing this, they will gain much more customers and money
+                  </p>
+                  <br>
+                  <h3>Narcotic manufacturing companies</h3>
+                  <p>
+                    Companies manufacturing heavy narcotics such as Cocaine, Heroin and morphine will most likely lose a lot of business after
+                    their customers have easy access to a better narcotic. People will stop buying hard drugs, and will start
+                    buying more marijuana.
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="perspective">
+                  <h2>What are the various perspectives on this topic?</h2>
+                  <br>
+                  <h3>Parents and Guardians </h3>
+                  <p>
+                    Parents are scared that their young children might be exposed to edibles, and may consume them out of curiosity, as they
+                    are often displayed in a colourful and fun manner. Parents are also worried about their teenagers and
+                    young adults. Currently, the consumption of marijuana is a very common thing among youth and young adults.
+                  </p>
+                  <br>
+                  <h3>People in need of marijuana </h3>
+                  <p>
+                    Many people are in need of marijuana to treat medical issues, but are not qualified for a prescription. These people are
+                    for the legalization of marijuana to be able to treat their illnesses without the need of a prescription.
+                  </p>
+                  <br>
+                  <h3>Young-adults and teenagers</h3>
+                  <p>
+                    Young adults are for the legalization of marijuana, because it would be a more accessible and legal way to smoke it without
+                    needing a medical reason. Many people like to smoke it for fun, but can’t get a hold of it because it
+                    is only available for medical reasons.
+                  </p>
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="civics">
+                  <h2>How does civics relate to this topic? </h2>
+                  <h3>Levels of Gov't </h3>
+                  <p>
+                    The levels of government associated with this topic are federal. Prime minister Justin Trudeau is the politician who looked
+                    into the problem, and made the decision to legalize marijuana.
+                  </p>
+                  <br>
+                  <h3>Branches of gov’t </h3>
+                  <p>
+                    The Legislative branch is the level of government involved in the legalization of marijuana, as it is a national law, which
+                    is the branch that takes care of national laws. The executive branch is also related to this series of
+                    laws, as the monarch is in charge of that branch of government. (5)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="laws">
+                  <h2>Relevent Laws</h2>
+                  <h4></h4>
+                  <p>
+                    Current illegal cannabis acts include being in possession of Cannabis for non-medical purposes and storefront operations
+                    selling cannabis that are not under the license of Health Canada. Laws that will exist after the legalization
+                    of cannabis include; It will be illegal for people under the age of 19 to buy, sell, have and share recreational
+                    cannabis, LCBO will oversee the sale and distribution of recreational cannabis through a subsidiary corporation,
+                    Cannabis will be restricted in certain places to protect the general public, children and the vulnerable.
+                    After the legalization of marijuana, driving and DUI laws would be enhanced.
+                  </p>
+                  <p>
+                    (6) (7) (8)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="politics">
+                  <h2>Political parties </h2>
+                  <h3>Liberal</h3>
+                  <p>
+                    The current prime minister of Canada, Justin Trudeau was the leader in charge of the decisions regarding cannabis laws. Justin
+                    Trudeau is for the legalization of marijuana, and he is in charge of the Liberal Party of Canada.
+                  </p>
+                  <br>
+                  <h3>Conservatives</h3>
+                  <p>
+                    Stephen Harper, in charge of the Conservatives states that him and his party are strongly against the legalization of cannabis.
+                  </p>
+                  <br>
+                  <h3>NDP</h3>
+                  <p>
+                    The NDP leader, Tom Mulcair, states that he thinks the use of marijuana should be a personal choice but that there are still
+                    medical issues that need to be examined before the legalization of the drug goes ahead in Canada. (5)
+                  </p>
+                  <br>
+                  <h3>Green Party</h3>
+                  <p>
+                    The Green Party would choose to legalize and tax marijuana, and believes that drug addictions should be treated as a health
+                    problem, not as criminal offences.
+                  </p>
+                  <p>
+                    (9)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="attempts">
+                  <h2>Attempts to Solve Problem</h2>
+                  <h3>NORML</h3>
+                  <p>
+                    Their objective is to eliminate all civil and criminal penalties for private marijuana use. This organization is for the
+                    Canadian government legalizing Marijuana, because they want the penalty for marijuana to go down. They
+                    do this by raising awareness on the cause, and planning rallies and protests, educating the public about
+                    their right, and everything they need to know about the benefits and issues of legalizing Marijuana.
+                    They also want to keep marijuana a safe hobby. They do this by advertising the risks of cannabis to children,
+                    and the steps a parents can do to protect their young children from THC exposure.
+                  </p>
+                  <h3>WHO (World Health Organization)</h3>
+                  <p>
+                    The World Health Organization helps regulate the use of marijuana by indicating what types are dangerous and what types are
+                    safe. They also help by explaining the difference between medical marijuana and resold marijuana.
+                  </p>
+                  <p>(10) (11) </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="solutions">
+                  <h2>Possible solutions to the problem </h2>
+                  <h3>Strict age restrictions on the possession of marijuana</h3>
+                  <p>
+                    A smart idea to resolve this problem, would be to add strict monitoring on the age restrictions on marijuana. This could
+                    be achieved by the addition of extra security and monitoring of pot trafficking. There should be more
+                    police monitoring the exchange of marijuana by the underaged.
+                  </p>
+                  <h3>Restrict the use of colourful, playful design in the packages</h3>
+                  <p>
+                    To prevent children from becoming curious, or attracted to the packaging, it would make a significance to make the packaging
+                    in a plain and monotone fashion as to not attract young children.
+                  </p>
+                  <h3>Raise awareness on the dangers of Cannabis</h3>
+                  <p>
+                    In raising awareness on the dangers and consequences of different types of marijuana, it educated the general public on the
+                    topic, and it might help instruct them on how to prevent health problems.
+                  </p>
+
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="pros-cons">
+                  <h2>Pros and Cons of Each Solution</h2>
+                  <h3>Strict age restrictions on the possession of marijuana</h3>
+                  <p>
+                    Strengths: It is easy and cheap enforce these laws.
+                  </p>
+                  <p>
+                    Limitations: Marijuana is easily resold for higher and changed to enhance the quality
+                  </p>
+                  <h3>Restrict the use of colourful, playful design in the packages</h3>
+                  <p>
+                    Strengths: It’s easy to enforce this law.
+                  </p>
+                  <p>
+                    Limitations: It might cost more to make these packages
+                  </p>
+                  <h3>Raise awareness on the dangers of Cannabis</h3>
+                  <p>
+                    Strengths: Very cheap, and easy to inform the public on the consequences of marijuana
+                  </p>
+                  <p>
+                    Limitations: not everyone might listen to the warnings
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="tim-row" id="conclusion">
+                  <h2>Conclusion</h2>
+                  <h4></h4>
+                  <p>
+                    The possibility that the federal government will legalize and regulate marijuana for recreational purposes presents a bold
+                    new landscape for Canadian businesses and governments alike. What this new landscape might look like
+                    remains unclear, however, the Federal Task Force charged with informing upcoming legislation on the topic
+                    continues to study the issue and meet with stakeholders throughout Canada and abroad, including in those
+                    US states where recreational marijuana is already legal.
+                  </p>
+                  <p>
+                    What is clear, however, is that regardless of the specifics of how recreational marijuana may ultimately be regulated in
+                    terms of distribution, retail, marketing or even the forms the product can be sold in, success in this
+                    nascent industry will be predicated upon understanding the current and future consumer. (12)
+                  </p>
+
+                </div>
+                <div class="space-70"></div>
+
+
+                <div class="row" id="modals">
+                  <div>
+                    <div class="container text-center">
+                      <h3></h3>
+                      <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                        citations
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="space-70"></div>
+
+
+                <!-- end container -->
+              </div>
+
+            </div>
+            <!-- main content -->
+
+
+          </div>
+        </div>
+      </div>
+      <div class="space-70"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="http://jenna.rahal.io">
+                Creative Jenna
+              </a>
+            </li>
+            <li>
+              <a href="http://jenna.rahal.io">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="http://jenna.rahal.io">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="http://jenna.rahal.io">
+                Licenses
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright pull-right">
+          &copy; 2018, made with
+          <i class="material-icons">favorite</i> by Creative Jenna for a better web.
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <!-- Start Modal Citations -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="material-icons">clear</i>
+          </button>
+          <h4 class="modal-title">Citations</h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            (1) Head, Tom. "Reasons Why Marijuana is Illegal In Most Places." ThoughtCo. Accessed January 12, 2018. https://www.thoughtco.com/why-is-marijuana-illegal-721155.
+          </p>
+          <p>
+            (2) "Marijuana Statistics - Cannabis Use Statistics - Drug-Free World." Foundation for a Drug-Free World. Accessed January
+            13, 2018. http://www.drugfreeworld.org/drugfacts/marijuana/international-statistics.html.
+          </p>
+          <p>(3) Ottawa, Ian McDowell University of. Marijuana in Canada: Facts & Figures. Accessed January 13, 2018. https://www.med.uottawa.ca/sim/data/Marijuana_e.htm.
+          </p>
+          <p>
+            (4) "Marijuana Statistics - Cannabis Use Statistics - Drug-Free World." Foundation for a Drug-Free World.
+          </p>
+          <p>
+            (5) "Democratic Governance: The Constitution and Canada's Branches of Government." LawNow Magazine. November 01, 2017. Accessed
+            January 15, 2018. http://www.lawnow.org/democratic-governance-the-constitution-and-canadas-branches-of-government/.ƒ
+          </p>
+          <p>
+            (6) Drugs and Drug Policy in Canada. Accessed January 15, 2018. https://sencanada.ca/content/sen/committee/362/ille/rep/rep-nov98-e.htm.
+          </p>
+          <p>
+            (7) Government of Canada, Department of Justice, Electronic Communications. "Current Cannabis Laws - Legalization and Regulation
+            of Cannabis." Government of Canada, Department of Justice, Electronic Communications. August 08, 2017. Accessed
+            January 15, 2018. http://www.justice.gc.ca/eng/cj-jp/marijuana/law-loi.html.
+          </p>
+          <p>
+            (8) "JavaScript is required to view this site." Ontario.ca. Accessed January 15, 2018. https://www.ontario.ca/page/cannabis-legalization.
+          </p>
+          <p>
+            (9) "Where Canadian political parties stand on marijuana - Blog - The Fifth Estate." CBCnews. March 09, 2017. Accessed January
+            15, 2018. http://www.cbc.ca/fifth/blog/where-canadian-political-parties-stand-on-marijuana.
+          </p>
+          <p>
+            (10) Concepcion, Pocholo. "Medical cannabis is safe, says WHO." Inquirer News Medical cannabis is safe says WHO Comments.
+            Accessed January 17, 2018. http://newsinfo.inquirer.net/953103/medical-marijuana-world-health-organization-who-cannabidiol-cbd-raul-elizalde-hempmeds-mexico.
+          </p>
+          <p>
+            (11) "Cannabis." WHO. Accessed January 17, 2018. http://www.who.int/substance_abuse/facts/cannabis/en/.
+          </p>
+          <p>
+            (12) Deloitte Report
+          </p>
+          <p>
+            NOTE: TODO is a link to all the reports where information was refernced
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default btn-simple"></button>
+          <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  End Modal -->
+
+</body>
+<!--   Core JS Files   -->
+<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="assets/js/material.min.js"></script>
+
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="assets/js/nouislider.min.js" type="text/javascript"></script>
+
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="assets/js/material-kit.js" type="text/javascript"></script>
+
+<script>
+  var header_height;
+  var fixed_section;
+  var floating = false;
+
+  $().ready(function () {
+    suggestions_distance = $("#suggestions").offset();
+    pay_height = $('.fixed-section').outerHeight();
+
+    $(window).on('scroll', materialKit.checkScrollForTransparentNavbar);
+
+    // the body of this function is in assets/material-kit.js
+    materialKit.initSliders();
+  });
+
+</script>
+
+</html>

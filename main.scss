@@ -1,0 +1,233 @@
+$gradient1 : #512DA8;
+$gradient2: #880E4F;
+$text: #212121;
+
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;  
+    overflow-x: hidden;
+}
+
+
+body{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  color: $gradient1;
+  margin: 0;
+  padding: 0px; 
+  font-size: 1em;
+  background: $gradient1;
+    background: -webkit-linear-gradient($gradient1, $gradient2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($gradient1, $gradient2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($gradient1, $gradient2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($gradient1, $gradient2); /* Standard syntax */
+}
+
+h1{
+  font-size: 3.6em;
+  line-height: 1.2em;
+  border-bottom: #CCC solid 1px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -2px; 
+  padding-bottom: 0px; 
+  padding-top: 100px; 
+  margin-bottom: -20px; 
+}
+
+h2{
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px; 
+  display: block;
+  color: #FAFAFA;
+}
+h3 {
+  padding: 0px; 
+  margin: 0px; 
+  color: #311B92; 
+}
+
+h4 {
+  padding-top: 0px; 
+  margin-top: 0px; 
+
+  padding-bottom: 0px; 
+  margin-bottom: 0px; 
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1em; 
+  font-weight: 300; 
+  padding: 0px; 
+  margin: 0px; 
+}
+
+
+
+md-content {
+  background: none; 
+}
+
+.md-headline{
+  text-align: center;
+
+  font-weight: 400 !important;
+}
+
+md-card {
+  text-align: left !important;
+}
+
+md-tooltip {
+  font-size: 1em;
+  font-weight: 100;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.modal {
+
+  text-align: left; 
+  color: $text;
+
+  .heading {
+    font-size: 1.8em;
+    font-weight: 300;   
+    color: $gradient1;  
+  }
+
+  .img {
+    width: 90%;
+    z-index: 1;
+  }
+
+    .small {
+      width: 50%;
+    }
+    .xsmall {
+      width: 40%;
+    }
+}
+
+.item {
+  width: 300px; 
+}
+
+.nav {
+  width: 80px; 
+  height: 80px; 
+  border: 3px white solid;
+  margin: 2px 2px 15px 2px !important; 
+  padding-top: 8px; 
+  padding-right: 3px !important; 
+  padding-left: 3px !important; 
+  color: #E1BEE7; 
+  transition: ease 0.5s; 
+
+  &:hover {
+    background: #FF4081 !important;
+    color: #fff;
+  }
+}
+
+.project, .portfolio, .cred {
+  width: 300px; 
+  display: none;
+
+  .desc {
+    text-align: center;
+    color: #212121;
+  }
+
+  .title {
+    background: #C51162;
+    color: #F3E5F5;
+    text-transform: uppercase;
+  }
+  .img {
+    width: 100%; 
+  }
+
+  .item {
+    width: 100%;
+    padding-bottom: 20px; 
+  }
+}
+
+.cred {
+  width: 500px; 
+}
+
+.portfolio {
+  padding-top: 10px; 
+  padding-bottom: 0px;
+  background-color: #fff;
+
+  &:hover {
+  background-color: #fff;
+  } 
+
+}
+
+.ptext{
+  position: absolute;
+  width: 288px;
+  height: 116px;
+  text-align: center;
+  padding-top: 100px; 
+  color: #fff;
+  opacity: 1;
+  font-size: 1.4em;
+  background-color: rgba(98,50,128,.8);
+}
+
+.pwrap {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display:block;
+}
+
+
+
+.resume {
+  width: 1020px;
+}
+
+.reslink {
+    background: #C51162;
+    color: #F3E5F5;
+    padding: 15px;
+    font-size: 1.5em;
+} 
+
+.year {
+  opacity: .7;
+}
+
+#projects {
+
+  transition: visibility 0s, opacity 0.5s linear;
+}
+@media (max-width:550px){
+  .cred {
+    width:95%;
+  }
+}
+@media (max-width:1490px){
+  .resume {
+    width:500px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    .mobflex {
+    display: flex;
+  }
+}

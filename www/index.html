@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+</head>
+<body ng-app="MainApp" ng-cloak>
+
+    <header>
+        <div layout="column" layout-align="center center">
+            <div><h1>Bernice Go</h1></div>
+            <div><h2>Designer . Developer</h2></div>
+        </div>
+    </header>
+    <main ng-controller="MainController">
+        <div layout="row" layout-align="center center">
+            <md-button class="nav" ng-click="showGallery()">
+                <div><i class="fa fa-book fa-2x"></i> </div>
+                <div>gallery</div>
+            </md-button> 
+            <md-button class="nav" ng-click="showProjects()">
+                <div><i class="fa fa-suitcase fa-2x"></i> </div>
+                <div>projects</div>
+            </md-button> 
+            <md-button class="nav" ng-click="showCredentials()">
+                <div><i class="fa fa-certificate fa-2x"></i> </div>
+                <div>credentials</div>
+            </md-button> 
+        </div>
+    <section flex-gt-sm="70" flex-offset-gt-sm="15" flex="100" flex-offset="0" id="projects">
+        <md-content layout="row" layout-wrap layout-align="center start">
+            <md-card md-whiteframe="4" layout="column" ng-repeat="p in projects" class="project" flex="nogrow">
+                <md-card-title class="title">
+                    <md-card-title-text>
+                        <span class="md-headline">{{p.name}}</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content class="md-padding" >
+                    <md-content class="desc">{{p.desc}}</md-content>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center">
+                    <md-content layout-padding="" class="year">{{p.year}}</md-content>
+                    <div flex></div>
+                    <md-button class="md-primary md-raised md-hue-1"  ng-click="showModal(p.modal)">
+                        <md-tooltip md-direction="bottom"  ng-if='!p.if'>
+                          Check back later!
+                        </md-tooltip>
+                        Explore
+                    </md-button>
+                </md-card-actions>
+            </md-card>
+        </md-content>       
+    </section>
+    <section flex-gt-sm="70" flex-offset-gt-sm="15" flex="100" flex-offset="0" id="gallery">
+        <md-content layout="row" layout-wrap layout-align="center start">
+            <md-button md-whiteframe="4" layout="column" ng-repeat="pf in portfolio" class="portfolio" flex="nogrow" class="md-padding" ng-mouseenter="hover(pf)" ng-mouseleave="hover(pf)" ng-click="showPortfolio(pf)">
+                    <span class="ptext" ng-show="pf.show">{{pf.title}}</span>
+                    <img ng-src="/img/portfolio/{{pf.img}}" class="img">
+            </md-button>
+        </md-content>       
+    </section>
+    <section flex-gt-sm="70" flex-offset-gt-sm="15" flex="100" flex-offset="0" id="credentials">
+        <md-content layout="row" layout-wrap layout-align="center start">
+                <md-button md-whiteframe="4" ng-href="resume.pdf" layout="column" flex="nogrow" class="cred resume reslink" ng-attr-target="_blank">
+                    View Resume
+                </md-button>
+
+            <md-card md-whiteframe="4" layout="column" flex="nogrow" class="cred">
+                <md-card-title class="title">
+                    <md-card-title-text>
+                        <span class="md-headline">Work Experience</span>
+                    </md-card-title-text>
+                </md-card-title>
+                <md-card-content class="md-padding">
+                    <md-content class="item" ng-repeat="w in work">
+                        <h3>{{w.title}}</h3>
+                        <h4>{{w.company}}</h4>
+                        <h5>{{w.date}}</h5>
+                    </md-content>
+                </md-card-content>
+            </md-card>
+
+            <div layout="column" flex-xs class="mobflex">
+                <md-card md-whiteframe="4" layout="row" layout-wrap flex="nogrow" class="cred">
+                    <md-card-title class="title" >
+                        <md-card-title-text>
+                            <span class="md-headline">Education</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content class="md-padding">
+                        <md-content class="item">
+                            <h3>Bachelor of Computer Science</h3>
+                            <h4>Software engineering option</h4>
+                            <h5>2011-16 . University of Waterloo</h5>
+                        </md-content>
+                        <md-content class="item">
+                            <h3>Bachelor of Business Administration</h3>
+                            <h4>Marketing Specialization</h4>
+                            <h5>2011-16 . Wilfrid Laurier University</h5>
+                        </md-content>
+                        <md-content>
+                            <h3>Full Stack Web Development Certification</h3>
+                            <h4>Computer Software Engineering</h4>
+                            <h5>2016 . Free Code Camp</h5>
+                        </md-content>
+                    </md-card-content>
+                </md-card>  
+                <md-card md-whiteframe="4" layout="column" flex="nogrow" class="cred">
+                    <md-card-title class="title">
+                        <md-card-title-text>
+                            <span class="md-headline">Skills</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content class="md-padding">
+                        <md-content>
+                            <h3>Languages</h3>
+                            English . French . Cantonese . Japanese
+                            <h3>Programming</h3>
+                            C . C++ . C# . Java . Python
+                            <h3>Web</h3>
+                            HTML . SCSS . JavaScript . AngularJS . JQuery
+                            <h3>Art</h3>
+                            After Effects . Illustrator . InDesign . Photoshop . Paint Tool Sai
+                        </md-content>
+                    </md-card-content>
+                </md-card>  
+                <md-card md-whiteframe="4" layout="column" flex="nogrow" class="cred">
+                    <md-card-title class="title">
+                        <md-card-title-text>
+                            <span class="md-headline">Contact</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content class="md-padding center">
+                        <md-content>Have a project in mind? Contact me on my gmail - bernicewygo
+                        <br><br>
+                        <md-button class="md-primary md-raised" ng-href="https://github.com/bernicewygo">GITHUB</md-button>  
+                        <md-button class="md-primary md-raised" ng-href="https://www.linkedin.com/in/bernicewygo">LINKEDIN</md-button>
+                        <md-button class="md-primary md-raised" ng-href="http://youtube.com/icedude999">YOUTUBE</md-button>
+                        </md-content>
+                    </md-card-content>
+                </md-card>                               
+            </div>
+        </md-content>       
+    </section>
+    </main>
+
+
+
+    <!-- Angular Material requires Angular.js Libraries -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script><script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+
+  <script type="text/javascript" src="js/app.js"></script>
+  
+</body>
+</html>

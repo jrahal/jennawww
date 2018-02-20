@@ -1,0 +1,37 @@
+[
+  {
+    "name":"Neko Fishing",
+    "desc": "2D Android game made in Unreal 4",
+    "if": false,
+    "modal": "nekofishing",
+    "year": "in progress"
+  },
+  {
+    "name":"WATEats",
+    "desc": "Restaurant decision maker BlackBerry App",
+    "if": true,
+    "modal": "wateats",
+    "year": 2016
+  },
+  {
+    "name":"Upscale Markets",
+    "desc": "Online grocery store web app made with Google's Angular Material",
+    "if": true,
+    "modal": "upscale",
+    "year": 2016
+  },  
+  {
+    "name":"Squidpia",
+    "desc": "2D Squid HTML5 mini-game",
+    "if": true,
+    "modal":"squidpia",
+    "year": 2015
+  },  
+  {
+    "name":"waterloc",
+    "desc": "UW building finder web app",
+    "if": true,
+    "modal": "waterloc",
+    "year": 2015
+  }
+]
